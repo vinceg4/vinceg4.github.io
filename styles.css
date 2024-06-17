@@ -4,8 +4,8 @@ body {
 
 .circle {
     border-radius: 50%;
-    width: 65px;
-    height: 65px;
+    width: 67px;
+    height: 67px;
     background-color: lightblue;
     position: absolute;
     display: inline-flex; /* or inline-flex */
