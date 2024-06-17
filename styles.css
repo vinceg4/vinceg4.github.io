@@ -1,0 +1,157 @@
+body {
+    background-color: beige;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    background-color: lightblue;
+    position: absolute;
+    display: inline-flex; /* or inline-flex */
+    align-items: center; 
+    justify-content: center;
+}
+
+.circle.big {
+    width: 120px;
+    height: 120px;
+    background-color: yellow;
+    margin: 100px;
+}
+
+.one {
+    left: -50px;
+    top: -55px;
+}
+
+.two {
+    top: -80px;
+    left: 35px;
+}
+
+.three {
+    right: -50px;
+    top: -55px;
+}
+
+
+.four {
+    left: -70px;
+    bottom: -32px;
+}
+
+.five {
+    left: 73px;
+    bottom: -80px;
+}
+
+.six {
+    right: -70px;
+    bottom: -32px;
+}
+
+.seven {
+    left: -80px;
+    top: 20px;
+
+}
+
+.eight {
+    right: -80px;
+    top: 20px;
+}
+
+.nine {
+    left: -10px;
+    bottom: -80px;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
+    text-align: center;
+    font-size: 9px; /* Adjust font size for small circles */
+    font-weight: bold;
+}
+
+.editable {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Ensure the input does not capture clicks */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#dropdowns {
+    position: absolute;
+    top: calc(50%); /* Position dropdowns below big-circle */
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); /* Adjust as needed */
+    gap: 10px; /* Adjust gap between items */
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Adjust width to fit within screen */
+    max-width: 400px; /* Set max-width for larger screens */
+}
+
+.dropdown {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px; /* Reduce margin-bottom for tighter spacing */
+    font-size: 10px; /* Adjust font size for smaller labels */
+}
+
+select {
+    font-size: 12px; /* Adjust font size */
+    padding: 3px 8px; /* Adjust padding */
+    width: 100%; /* Adjust width to fill container */
+    max-width: 100px; /* Set max-width for larger screens */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#big-circle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
